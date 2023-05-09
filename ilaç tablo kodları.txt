@@ -1,0 +1,13 @@
+Create Table ilaclar(
+ilacNo int primary key not null identity(1,1),
+ad nvarchar(50) not null,
+fiyat decimal(18,0) not null,
+aciklama nvarchar(MAX) not null
+)
+
+insert into ilaclar(ad,fiyat,aciklama)
+values('reparil',30,'ödem iyilestirici'),
+('parol',20,'aðrý kesici'),
+('devbit',20,'d vitamini'),
+('mazeljik',30,'aðrý kesici ilaç'),
+('adalat',30,'tansiyon düþürücü ilaç')
